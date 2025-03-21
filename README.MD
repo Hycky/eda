@@ -13,12 +13,29 @@ Este guia ensina como:
 
 ### 🐍 Python 3.11 ou superior
 
-se usa pyenv, basta o comando:
+**se usa pyenv, basta o comando:**
+
+#### Caso não tenha o python 3.11 instalado no seu pyenv
 
 ```bash
 pyenv install 3.11.8
+```
+
+#### caso ja possua o python 3.11
+
+```bash
 pyenv local 3.11.8
 ```
+
+**Se não usa pyenv deve baixar a versão correspondente na web, porém recomente formtemente o usao de pyenv**
+
+#### Windows:
+
+https://github.com/pyenv-win/pyenv-win
+
+#### Mac/Linux:
+
+https://github.com/pyenv/pyenv
 
 ## ✅ Instalação
 
