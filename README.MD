@@ -27,7 +27,7 @@ pyenv install 3.11.8
 pyenv local 3.11.8
 ```
 
-**Se não usa pyenv deve baixar a versão correspondente na web, porém recomente formtemente o usao de pyenv**
+**Se não usa pyenv deve baixar a versão correspondente na web, porém recomendo fortemente o usao de pyenv**
 
 #### Windows:
 
@@ -77,6 +77,43 @@ poetry install
 
 ```bash
 poetry shell
+```
+
+---
+
+## 🚧 Edição e adaptação
+
+Na pasta `data`, coloque seu arquivo CSV obrigatoriamente com o nome `"data.csv"`:
+
+![alt text](image.png)
+
+## 🔧 Como ajustar colunas no seu DataFrame
+
+No arquivo `main.py`, você encontrará **13 transformações possíveis** que podem ser ativadas conforme a necessidade do seu conjunto de dados.
+
+Para utilizá-las:
+
+1. Copie a transformação desejada.
+2. Remova o `#` do início da linha.
+3. Substitua `"COLUNA"` pelo nome real da coluna que deseja modificar.
+
+---
+
+### 🧪 Exemplo
+
+Suponha que seu `DataFrame` possua uma coluna chamada `"CPF"` contendo números com 11 dígitos.
+
+Por padrão, o YData Profiling pode interpretar essa coluna como **numérica** e tentar calcular soma, média etc.  
+Porém, ela é uma informação **categórica** e deve ser convertida para `string`.
+
+---
+
+### ✅ Ajuste sugerido no `main.py`:
+
+```python
+# 🔹 1. Conversão para string (identificadores, códigos)
+# Quando usar: colunas com números que representam IDs, CNPJs, códigos.
+df["CPF"] = df["CPF"].astype(str)
 ```
 
 ---
