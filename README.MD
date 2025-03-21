@@ -83,7 +83,7 @@ poetry shell
 
 ## 🚧 Edição e adaptação
 
-Na pasta `data`, coloque seu arquivo CSV obrigatoriamente com o nome `"data.csv"`:
+Na pasta `data`, coloque seu arquivo CSV obrigatoriamente com o nome `"data.csv"` e remova o arquivo de exemplo `"data_example.csv"`:
 
 ![alt text](image.png)
 
