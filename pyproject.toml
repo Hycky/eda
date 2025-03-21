@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "s"
+version = "0.1.0"
+description = "Análise exploratória de dados"
+authors = ["Henrique Ferreira Henrique <hhycky@live.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "<3.13,>=3.9"
+setuptools = "^77.0.3"
+taskipy = "^1.14.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
