@@ -9,6 +9,17 @@ Este guia ensina como:
 
 ---
 
+## 💡 Pré requisitos:
+
+### 🐍 Python 3.11 ou superior
+
+se usa pyenv, basta o comando:
+
+```bash
+pyenv install 3.11.8
+pyenv local 3.11.8
+```
+
 ## ✅ Instalação
 
 ### 🔹 Usando `venv`
